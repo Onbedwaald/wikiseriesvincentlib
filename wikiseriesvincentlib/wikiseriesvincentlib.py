@@ -61,7 +61,7 @@ def search_series(name):
                   'formatversion': '1',
                   'namespace': '0',
                   'limit': limit,
-                   'search': term}
+                  'search': term}
     search_response = requests.get(api_url, params=parameters)
     series_url = search_response.json()[3][0]
     series_response = requests.get(series_url)
