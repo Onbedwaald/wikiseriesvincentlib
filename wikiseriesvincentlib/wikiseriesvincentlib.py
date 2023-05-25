@@ -33,7 +33,7 @@ Main code for wikiseriesvincentlib.
 
 import logging
 import requests
-from bs4 import BeautifulSoup as Bfs
+from bs4 import BeautifulSoup as Bfs 
 
 __author__ = '''WikiseriesVincent <costas.tyf@gmail.com>'''
 __docformat__ = '''google'''
