@@ -33,7 +33,7 @@ Main code for wikiseriesvincentlib.
 
 import logging
 import requests
-from bs4 import BeautifulSoup as Bfs 
+from bs4 import BeautifulSoup as Bfs
 
 __author__ = '''WikiseriesVincent <costas.tyf@gmail.com>'''
 __docformat__ = '''google'''
@@ -50,6 +50,7 @@ __status__ = '''Development'''  # "Prototype", "Development", "Production".
 LOGGER_BASENAME = '''wikiseriesvincentlib'''
 LOGGER = logging.getLogger(LOGGER_BASENAME)
 LOGGER.addHandler(logging.NullHandler())
+
 
 def search_series(name):
     api_url = 'https://en.wikipedia.org/w/api.php'
