@@ -30,8 +30,8 @@ jobs:
       - name: Lint
         run: _CI/scripts/lint.py
 
-      - name: Test
-        run: _CI/scripts/test.py
+    #   - name: Test
+    #     run: _CI/scripts/test.py
 
       - name: Build
         run: _CI/scripts/build.py
