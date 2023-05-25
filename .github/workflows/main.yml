@@ -24,6 +24,9 @@ jobs:
       - name: Install pipenv
         run: pip install pipenv
 
+      - name: make executable
+        run: chmod +x _CI/scripts/*
+
       - name: Lint
         run: _CI/scripts/lint.py
 
