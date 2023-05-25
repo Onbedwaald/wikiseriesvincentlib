@@ -62,9 +62,9 @@ def search_series(name):
                   'namespace': '0',
                   'limit': limit,
                   'search': term}
-    search_response = requests.get(api_url, params=parameters)
+    search_response = requests.get(api_url, params=parameters, timeout=3)
     series_url = search_response.json()[3][0]
-    series_response = requests.get(series_url)
+    series_response = requests.get(series_url, timeout=3)
     soup = Bfs(series_response.text, features="html.parser")
     season_table = soup.find('table', class_='wikitable')
     seasons_numbers = [item.text for item in season_table.find_all('span', class_='nowrap')]
